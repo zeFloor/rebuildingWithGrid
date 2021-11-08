@@ -1,0 +1,45 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+/*
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 70px 680px;
+}
+*/
+header {
+  grid-column: 2/-2;
+}
+
+.background {
+  height: 500px;
+  background: url(../img/bg-1.jpg);
+  background-size: cover;
+}
+
+header {
+  background-color: gray;
+}
+
+.headline h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 60px;
+  text-shadow: 2px 2px black;
+}
+
+.headline h3 {
+  text-transform: capitalize;
+  color: white;
+  font-size: 25px;
+  text-shadow: 1px 1px black;
+}
+
+.background{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

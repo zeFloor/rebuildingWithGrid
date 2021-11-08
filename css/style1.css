@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  display: grid;
+
+}
+
+.background {
+  height: 500px;
+  background: url(../img/bg-1.jpg);
+  background-size: cover;
+}
+
+.headline {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
