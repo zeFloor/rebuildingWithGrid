@@ -22,8 +22,10 @@ p {
   background: #333;
   color: #fff;
   text-decoration: none;
-  padding: 1em 2em;
+  padding: 0.8em 1.6em;
   border: 1px solid #666;
+  border-radius: 10px;
+  margin-bottom: 1em;
 }
 
 .btn:hover {
@@ -68,5 +70,28 @@ ul {
   padding-bottom: 0.2em;
 }
 .showcase-content h4 {
-  padding: 0 1em;
+  padding: 1em 1em;
+}
+
+/*Section-A content*/
+#section-A {
+  margin-top: 3em;
+  margin-right: 2em;
+}
+
+#section-A li {
+  background-color: #f2f2f2;
+  margin-bottom: 2em;
+}
+
+#section-A .btn-green {
+  background-color: #178a27;
+}
+
+#section-A .btn-blue {
+  background-color: #1686c1;
+}
+
+#section-A .btn-red {
+  background-color: #852406;
 }
