@@ -1,7 +1,13 @@
 /* Base code */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif!important;
   text-align: center;
   line-height: 1.5em;
   font-size: 1.1em;
@@ -22,15 +28,15 @@ p {
   background: #333;
   color: #fff;
   text-decoration: none;
-  padding: 0.8em 1.6em;
   border: 1px solid #666;
-  border-radius: 10px;
-  margin-bottom: 1em;
+  border-radius: 5px;
+  margin: 30px 0;
+  padding: 10px 30px;
+  transition: filter 0.3s;
 }
 
 .btn:hover {
-  background: #eaeaea;
-  color: #333;
+  filter: brightness(130%);
 }
 
 img {
@@ -62,26 +68,61 @@ ul {
 .showcase-content {
   margin: 0;
   color: white;
-  text-shadow: 2px 2px gray;
+  
 }
 .showcase-content h1 {
+  font-weight: 400;
   font-size: 4em;
   padding-top: 5em;
   padding-bottom: 0.2em;
+  text-shadow: 2px 2px black;
 }
 .showcase-content h4 {
   padding: 1em 1em;
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-shadow: 1px 1px black;
 }
 
 /*Section-A content*/
 #section-A {
+  width: 100%;
+  margin: 0 auto;
   margin-top: 3em;
   margin-right: 2em;
 }
 
-#section-A li {
+#section-A ul {
+  padding: 0;
+}
+
+#section-A .content-wrapper {
+  max-width: 360px;
   background-color: #f2f2f2;
-  margin-bottom: 2em;
+  margin: 0 auto 30px;
+}
+
+#section-A p {
+  padding:  0 15px;
+  font-size: 0.875rem;
+  color: #333;
+  line-height: 1.8em;
+}
+
+#section-A h3 {
+  color: #666;
+}
+
+#section-A .content-wrapper h3 {
+  padding: 15px 0px;
+}
+
+#section-A li:first-child h3 {
+  color: #178a27;
+}
+
+#section-A li:nth-child(2) h3 {
+  color: #1686c1;
 }
 
 #section-A .btn-green {
@@ -94,4 +135,29 @@ ul {
 
 #section-A .btn-red {
   background-color: #852406;
+}
+
+#section-A .content-bigger {
+  max-width: 460px;
+  background-color: #f2f2f2;
+  margin: 0 auto 30px;
+}
+
+#section-A .content-bigger h3 {
+  padding: 10px 0 30px;
+}
+
+#section-A li:nth-child(4) p {
+  padding-bottom: 60px;
+}
+
+#section-A li:last-child .btn {
+  background-color: #fff;
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+#section-A li:last-child .btn:hover {
+  filter: brightness(90%);
 }
